@@ -9,7 +9,7 @@
         }
         public double Bouns => bouns;
 
-        public double calculateSalary()
+        public double CalculateSalary()
         {
             return bouns + Salary;
         }

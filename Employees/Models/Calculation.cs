@@ -2,6 +2,6 @@
 {
     public interface Calculation
     {
-        public double calculateSalary();
+        public double CalculateSalary();
     }
 }

@@ -2,18 +2,21 @@
 {
     public class Developer : Employee, Calculation
     {
-        private readonly LeadDeveloper leadDeveloper;
+        private LeadDeveloper leadDeveloper;
 
-        public Developer(LeadDeveloper leadDeveloper, string firstName, string lastName, double salary) : base(firstName, lastName, salary)
+        public Developer(string firstName, string lastName, double salary) : base(firstName, lastName, salary)
         {
-            this.leadDeveloper = leadDeveloper;
         }
 
-        public LeadDeveloper LeadDeveloper => leadDeveloper;
-
-        public double calculateSalary()
+        public LeadDeveloper LeadDeveloper
         {
-            return Salary;
+            get { return leadDeveloper; }
+            set { leadDeveloper = value; }
+        }
+
+        public double CalculateSalary()
+        {
+            return this.Salary;
         }
     }
 }

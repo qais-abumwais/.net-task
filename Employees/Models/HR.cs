@@ -2,16 +2,19 @@
 {
     public class HR : Employee, Calculation
     {
-        private readonly Manager manager;
+        private Manager manager;
 
-        public HR(Manager manager, string firstName, string lastName, double salary) : base(firstName, lastName, salary)
+        public HR(string firstName, string lastName, double salary) : base(firstName, lastName, salary)
         {
-            this.manager = manager;
         }
 
-        public Manager Manager => manager;
+        public Manager Manager
+        {
+            get { return manager; }
+            set { manager = value; }
+        }
 
-        public double calculateSalary()
+        public double CalculateSalary()
         {
             return Salary;
         }

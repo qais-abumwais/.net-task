@@ -5,11 +5,10 @@
         private readonly double commission;
         private readonly double target;
         private readonly double totalSales;
-        private readonly Manager manager;
+        private Manager manager;
 
-        public Sales(Manager manager, double commission, double target, double totalSales, string firstName, string lastName, double salary) : base(firstName, lastName, salary)
+        public Sales(double commission, double target, double totalSales, string firstName, string lastName, double salary) : base(firstName, lastName, salary)
         {
-            this.manager = manager;
             this.commission = commission;
             this.totalSales = totalSales;
             this.target = target;
@@ -18,9 +17,13 @@
         public double Commission => commission;
         public double TotalSales => totalSales;
         public double Target => target;
-        public Manager Manager => manager;
+        public Manager Manager
+        {
+            get { return manager; }
+            set { manager = value; }
+        }
 
-        public double calculateSalary()
+        public double CalculateSalary()
         {
             if(totalSales > target)
             {
