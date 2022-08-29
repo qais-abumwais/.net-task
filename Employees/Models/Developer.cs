@@ -4,7 +4,7 @@
     {
         private LeadDeveloper leadDeveloper;
 
-        public Developer(string firstName, string lastName, double salary) : base(firstName, lastName, salary)
+        public Developer(string firstName, string lastName, decimal salary) : base(firstName, lastName, salary)
         {
         }
 
@@ -14,9 +14,9 @@
             set { leadDeveloper = value; }
         }
 
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
-            return this.Salary;
+            return Salary;
         }
     }
 }

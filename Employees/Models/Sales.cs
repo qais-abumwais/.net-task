@@ -2,28 +2,28 @@
 {
     public class Sales : Employee, Calculation
     {
-        private readonly double commission;
-        private readonly double target;
-        private readonly double totalSales;
+        private readonly decimal commission;
+        private readonly decimal target;
+        private readonly decimal totalSales;
         private Manager manager;
 
-        public Sales(double commission, double target, double totalSales, string firstName, string lastName, double salary) : base(firstName, lastName, salary)
+        public Sales(decimal commission, decimal target, decimal totalSales, string firstName, string lastName, decimal salary) : base(firstName, lastName, salary)
         {
             this.commission = commission;
             this.totalSales = totalSales;
             this.target = target;
         }
 
-        public double Commission => commission;
-        public double TotalSales => totalSales;
-        public double Target => target;
+        public decimal Commission => commission;
+        public decimal TotalSales => totalSales;
+        public decimal Target => target;
         public Manager Manager
         {
             get { return manager; }
             set { manager = value; }
         }
 
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
             if(totalSales > target)
             {

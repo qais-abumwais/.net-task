@@ -18,7 +18,7 @@ namespace Employees.Controllers
         }
 
         [HttpGet("calculate-salary")]
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
             Developer developer = new Developer(
                 "Qais",

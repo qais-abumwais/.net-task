@@ -2,14 +2,14 @@
 {
     public class Manager : Employee, Calculation
     {
-        private readonly double bouns;
-        public Manager(double bouns, string firstName, string lastName, double salary) : base(firstName, lastName, salary)
+        private readonly decimal bouns;
+        public Manager(decimal bouns, string firstName, string lastName, decimal salary) : base(firstName, lastName, salary)
         {
             this.bouns = bouns;
         }
-        public double Bouns => bouns;
+        public decimal Bouns => bouns;
 
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
             return bouns + Salary;
         }

@@ -9,7 +9,7 @@ namespace Employees.Controllers
     public class ManagerController : ControllerBase
     {
         [HttpGet("calculate-salary")]
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
             Manager manager = new Manager(500, "Rasheed", "Rabata", 500);
             return manager.CalculateSalary();

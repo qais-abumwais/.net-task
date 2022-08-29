@@ -17,7 +17,7 @@ namespace Employees.Controllers
         }
 
         [HttpGet("calculate-salary")]
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
             HR hr = new HR("Diana", "Shawabkeh", 500);
             return hr.CalculateSalary();

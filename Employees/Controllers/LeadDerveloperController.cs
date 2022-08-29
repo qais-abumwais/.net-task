@@ -17,7 +17,7 @@ namespace Employees.Controllers
         }
 
         [HttpGet("calculate-salary")]
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
             LeadDeveloper leadDeveloper = new LeadDeveloper("Diana", "Swaiss", 500);
             return leadDeveloper.CalculateSalary();

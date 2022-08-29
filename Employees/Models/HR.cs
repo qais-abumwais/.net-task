@@ -4,7 +4,7 @@
     {
         private Manager manager;
 
-        public HR(string firstName, string lastName, double salary) : base(firstName, lastName, salary)
+        public HR(string firstName, string lastName, decimal salary) : base(firstName, lastName, salary)
         {
         }
 
@@ -14,7 +14,7 @@
             set { manager = value; }
         }
 
-        public double CalculateSalary()
+        public decimal CalculateSalary()
         {
             return Salary;
         }

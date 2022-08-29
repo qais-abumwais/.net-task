@@ -6,9 +6,9 @@ namespace Employees.Models
     {
         private readonly string firstName;
         private readonly string lastName;
-        private readonly double salary;
+        private readonly decimal salary;
 
-        public Employee(string firstName, string lastName, double salary)
+        public Employee(string firstName, string lastName, decimal salary)
         {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -17,6 +17,6 @@ namespace Employees.Models
 
         public string FirstName => firstName;
         public string LastName => lastName;
-        public double Salary => salary;
+        public decimal Salary => salary;
     }
 }
