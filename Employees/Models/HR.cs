@@ -8,11 +8,7 @@
         {
         }
 
-        public Manager Manager
-        {
-            get { return manager; }
-            set { manager = value; }
-        }
+        public Manager Manager { get; set; }
 
         public decimal CalculateSalary()
         {

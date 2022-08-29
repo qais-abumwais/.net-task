@@ -8,11 +8,7 @@
         {
         }
 
-        public LeadDeveloper LeadDeveloper
-        {
-            get { return leadDeveloper; }
-            set { leadDeveloper = value; }
-        }
+        public LeadDeveloper LeadDeveloper { get; set; }
 
         public decimal CalculateSalary()
         {
