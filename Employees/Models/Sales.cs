@@ -23,7 +23,7 @@
         {
             if(totalSales > target)
             {
-                return ((commission / 100) * totalSales) + Salary;
+                return (commission * totalSales) + Salary;
             }
 
             return Salary;
